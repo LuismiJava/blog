@@ -1,2 +1,2 @@
 <br>
-<footer>Este es el pie de página</footer>
+<footer class="text-center">Este es el pie de página</footer>

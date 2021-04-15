@@ -2,9 +2,8 @@
 
 
 @section('title', 'Cursos')
-    
 @section('content')
-<h1>Bienvenido a la página de las cursos</h1>
+<h1>Bienvenido a la página de los cursos</h1>
 <a href="{{route('cursos.create')}}">Crear curso</a>
     <ul>
         @foreach ($cursos as $curso)
@@ -19,5 +18,6 @@
     </ul>
 
     {{$cursos->links()}}
+
 
 @endsection
