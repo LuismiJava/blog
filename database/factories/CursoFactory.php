@@ -24,12 +24,14 @@ class CursoFactory extends Factory
     {
 
         $name = $this->faker->sentence();
+        $descripcion = $this->faker->paragraph();
+        $categoria = $this->faker->randomElement(['Desarrollo web', 'Diseño web']);
 
         return [
             'nombre'=>$name,
             'slug' => Str::slug($name, '-'),
-            'descripcion'=>$this->faker->paragraph(),
-            'categoria'=>$this->faker->randomElement(['Desarrollo web', 'Diseño web'])
+            'descripcion'=> $descripcion,
+            'categoria'=>$categoria
         ];
     }
 }

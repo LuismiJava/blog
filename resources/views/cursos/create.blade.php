@@ -26,6 +26,7 @@
 @enderror
 
         <br>
+        <br>
         <label>
             Descripcion:<br>
             <textarea name="descripcion" rows="5">{{old('descripcion')}}</textarea>
@@ -37,6 +38,7 @@
 <small>*{{$message}}</small>
 <br>
 @enderror
+<br>
 <br>
         <label>
             Categoria:<br>
@@ -51,6 +53,13 @@
         @enderror
 
         <br>
+        <br>
+
+        <label>
+            El nombre de su URL:<br>
+            <input type="text" name="slug" value="{{old('slug')}}">
+
+        </label>
 
       <button type="submit">Guardar curso</button>
     </form>

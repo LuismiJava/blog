@@ -21,12 +21,12 @@ class StoreCurso extends FormRequest
      *
      * @return array
      */
+
     public function rules()
     {
         return [ 'nombre'=>'required|max:10',
         'descripcion'=>'required|min:10',
-        'categoria'=>'required'
-            
+        'categoria'=>'required'     
         ];
     }
 

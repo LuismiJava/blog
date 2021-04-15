@@ -50,7 +50,7 @@ class CursoController extends Controller
 
 
         $request->validate([
-            'nombre'=>'required|max:10',
+            'nombree'=>'required|max:10',
             'descripcion'=>'required|min:10',
             'categoria'=>'required',
 
