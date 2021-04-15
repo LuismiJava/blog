@@ -53,6 +53,7 @@ class CursoController extends Controller
             'nombre'=>'required|max:10',
             'descripcion'=>'required|min:10',
             'categoria'=>'required',
+
              ]);
 
 
