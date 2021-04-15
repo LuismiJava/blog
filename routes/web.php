@@ -4,6 +4,8 @@ use App\Http\Controllers\ContactanosController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\cursoController;
+use App\Http\Controllers\BarCodeController;
+use App\Http\Controllers\DataTableController;
 
 
 /*
@@ -43,4 +45,6 @@ Route::get('contactanos', [ContactanosController::class, 'index'])->name('contac
 
 Route::post('contactanos',[ContactanosController::class, 'store'])->name('contactanos.store');
 
-Route::get('/barcode', [BarCodeController::class, 'barcode'])->name('barcode');
+Route::get('datatable', [DataTableController::class, 'index'])->name('datatable');
+
+Route::get('barcode', [BarCodeController::class, 'index'])->name('barcode');
